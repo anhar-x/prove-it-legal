@@ -86,7 +86,7 @@
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="meta">Prove It &nbsp;·&nbsp; Last updated: 04 May 2026</p>
+    <p class="meta">Prove It &nbsp;·&nbsp; Last updated: 14 May 2026</p>
 
     <p>
       Anhar Perinkadakkat ("I", "me", or "we") operates the <strong>Prove It</strong>
@@ -127,9 +127,16 @@
       Prove It requires camera access to verify your unlock challenges. When you
       attempt to unlock a blocked app, the camera captures a single frame, which
       is immediately analysed on your device using an on-device machine-learning
-      model (Core ML / CLIP). The image is <strong>never stored, never saved to
-      your photo library, and never uploaded</strong>. The only output retained is
-      a pass/fail result used to grant or deny the unlock.
+      model (Core ML / CLIP). The image is <strong>never uploaded and never saved
+      to your photo library</strong>.
+    </p>
+    <p>
+      To power the in-app unlock history feature, a compressed copy of a
+      successful challenge photo may be stored locally in the app's private
+      container on your device, together with the challenge name and timestamp.
+      This history stays on-device only, is not transmitted to any server, and
+      is retained until it is replaced by newer entries or removed when the app
+      is deleted.
     </p>
 
     <p><strong>Motion data</strong></p>
@@ -190,8 +197,10 @@
     <h2>4. Data Retention and Deletion</h2>
     <p>
       All data Prove It stores locally is held in the app's private container on
-      your device. Deleting the app removes all associated data immediately. No
-      copies exist on any server operated by me.
+      your device. This includes onboarding details, blocking configuration,
+      lightweight diagnostics, and any unlock history photos stored for the
+      in-app history feature. Deleting the app removes all associated local data
+      immediately. No copies exist on any server operated by me.
     </p>
     <p>
       Subscription records managed by RevenueCat and Apple are governed by their
